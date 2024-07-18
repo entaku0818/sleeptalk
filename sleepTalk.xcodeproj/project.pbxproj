@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61458CB62C495DCB00B7107E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61458CB52C495DCB00B7107E /* WidgetKit.framework */; };
+		61458CB82C495DCB00B7107E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61458CB72C495DCB00B7107E /* SwiftUI.framework */; };
+		61458CBB2C495DCB00B7107E /* sleepTalkActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61458CBA2C495DCB00B7107E /* sleepTalkActivityBundle.swift */; };
+		61458CBD2C495DCB00B7107E /* sleepTalkActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61458CBC2C495DCB00B7107E /* sleepTalkActivityLiveActivity.swift */; };
+		61458CBF2C495DCB00B7107E /* sleepTalkActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61458CBE2C495DCB00B7107E /* sleepTalkActivity.swift */; };
+		61458CC12C495DCC00B7107E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61458CC02C495DCC00B7107E /* Assets.xcassets */; };
+		61458CC52C495DCC00B7107E /* sleepTalkActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 61458CB32C495DCB00B7107E /* sleepTalkActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		61458CCA2C495F2000B7107E /* sleepTalkActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61458CBC2C495DCB00B7107E /* sleepTalkActivityLiveActivity.swift */; };
 		617F53792C189B5A008D5316 /* sleepTalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F53782C189B5A008D5316 /* sleepTalkApp.swift */; };
 		617F537B2C189B5A008D5316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F537A2C189B5A008D5316 /* ContentView.swift */; };
 		617F537D2C189B5B008D5316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617F537C2C189B5B008D5316 /* Assets.xcassets */; };
@@ -18,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		61458CC32C495DCC00B7107E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 617F536D2C189B5A008D5316 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61458CB22C495DCB00B7107E;
+			remoteInfo = sleepTalkActivityExtension;
+		};
 		617F53862C189B5B008D5316 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 617F536D2C189B5A008D5316 /* Project object */;
@@ -34,7 +49,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		61458CC92C495DCC00B7107E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				61458CC52C495DCC00B7107E /* sleepTalkActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		61458CAE2C4436A100B7107E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		61458CB32C495DCB00B7107E /* sleepTalkActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = sleepTalkActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		61458CB52C495DCB00B7107E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		61458CB72C495DCB00B7107E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		61458CBA2C495DCB00B7107E /* sleepTalkActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sleepTalkActivityBundle.swift; sourceTree = "<group>"; };
+		61458CBC2C495DCB00B7107E /* sleepTalkActivityLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sleepTalkActivityLiveActivity.swift; sourceTree = "<group>"; };
+		61458CBE2C495DCB00B7107E /* sleepTalkActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sleepTalkActivity.swift; sourceTree = "<group>"; };
+		61458CC02C495DCC00B7107E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61458CC22C495DCC00B7107E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		617F53752C189B5A008D5316 /* sleepTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sleepTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		617F53782C189B5A008D5316 /* sleepTalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sleepTalkApp.swift; sourceTree = "<group>"; };
 		617F537A2C189B5A008D5316 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +87,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		61458CB02C495DCB00B7107E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61458CB82C495DCB00B7107E /* SwiftUI.framework in Frameworks */,
+				61458CB62C495DCB00B7107E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		617F53722C189B5A008D5316 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,12 +120,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61458CB42C495DCB00B7107E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61458CB52C495DCB00B7107E /* WidgetKit.framework */,
+				61458CB72C495DCB00B7107E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61458CB92C495DCB00B7107E /* sleepTalkActivity */ = {
+			isa = PBXGroup;
+			children = (
+				61458CBA2C495DCB00B7107E /* sleepTalkActivityBundle.swift */,
+				61458CBC2C495DCB00B7107E /* sleepTalkActivityLiveActivity.swift */,
+				61458CBE2C495DCB00B7107E /* sleepTalkActivity.swift */,
+				61458CC02C495DCC00B7107E /* Assets.xcassets */,
+				61458CC22C495DCC00B7107E /* Info.plist */,
+			);
+			path = sleepTalkActivity;
+			sourceTree = "<group>";
+		};
 		617F536C2C189B5A008D5316 = {
 			isa = PBXGroup;
 			children = (
 				617F53772C189B5A008D5316 /* sleepTalk */,
 				617F53882C189B5B008D5316 /* sleepTalkTests */,
 				617F53922C189B5B008D5316 /* sleepTalkUITests */,
+				61458CB92C495DCB00B7107E /* sleepTalkActivity */,
+				61458CB42C495DCB00B7107E /* Frameworks */,
 				617F53762C189B5A008D5316 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +159,7 @@
 				617F53752C189B5A008D5316 /* sleepTalk.app */,
 				617F53852C189B5B008D5316 /* sleepTalkTests.xctest */,
 				617F538F2C189B5B008D5316 /* sleepTalkUITests.xctest */,
+				61458CB32C495DCB00B7107E /* sleepTalkActivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +167,7 @@
 		617F53772C189B5A008D5316 /* sleepTalk */ = {
 			isa = PBXGroup;
 			children = (
+				61458CAE2C4436A100B7107E /* Info.plist */,
 				617F53782C189B5A008D5316 /* sleepTalkApp.swift */,
 				617F537A2C189B5A008D5316 /* ContentView.swift */,
 				617F537C2C189B5B008D5316 /* Assets.xcassets */,
@@ -133,6 +205,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		61458CB22C495DCB00B7107E /* sleepTalkActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61458CC62C495DCC00B7107E /* Build configuration list for PBXNativeTarget "sleepTalkActivityExtension" */;
+			buildPhases = (
+				61458CAF2C495DCB00B7107E /* Sources */,
+				61458CB02C495DCB00B7107E /* Frameworks */,
+				61458CB12C495DCB00B7107E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sleepTalkActivityExtension;
+			productName = sleepTalkActivityExtension;
+			productReference = 61458CB32C495DCB00B7107E /* sleepTalkActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		617F53742C189B5A008D5316 /* sleepTalk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 617F53992C189B5B008D5316 /* Build configuration list for PBXNativeTarget "sleepTalk" */;
@@ -140,10 +229,12 @@
 				617F53712C189B5A008D5316 /* Sources */,
 				617F53722C189B5A008D5316 /* Frameworks */,
 				617F53732C189B5A008D5316 /* Resources */,
+				61458CC92C495DCC00B7107E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				61458CC42C495DCC00B7107E /* PBXTargetDependency */,
 			);
 			name = sleepTalk;
 			productName = sleepTalk;
@@ -196,6 +287,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					61458CB22C495DCB00B7107E = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					617F53742C189B5A008D5316 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -225,11 +319,20 @@
 				617F53742C189B5A008D5316 /* sleepTalk */,
 				617F53842C189B5B008D5316 /* sleepTalkTests */,
 				617F538E2C189B5B008D5316 /* sleepTalkUITests */,
+				61458CB22C495DCB00B7107E /* sleepTalkActivityExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		61458CB12C495DCB00B7107E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61458CC12C495DCC00B7107E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		617F53732C189B5A008D5316 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,11 +359,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		61458CAF2C495DCB00B7107E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61458CBB2C495DCB00B7107E /* sleepTalkActivityBundle.swift in Sources */,
+				61458CBD2C495DCB00B7107E /* sleepTalkActivityLiveActivity.swift in Sources */,
+				61458CBF2C495DCB00B7107E /* sleepTalkActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		617F53712C189B5A008D5316 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6197F1D82C31A09A00CDF7F0 /* AudioRecorder.swift in Sources */,
+				61458CCA2C495F2000B7107E /* sleepTalkActivityLiveActivity.swift in Sources */,
 				617F537B2C189B5A008D5316 /* ContentView.swift in Sources */,
 				617F53792C189B5A008D5316 /* sleepTalkApp.swift in Sources */,
 			);
@@ -286,6 +400,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		61458CC42C495DCC00B7107E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61458CB22C495DCB00B7107E /* sleepTalkActivityExtension */;
+			targetProxy = 61458CC32C495DCC00B7107E /* PBXContainerItemProxy */;
+		};
 		617F53872C189B5B008D5316 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 617F53742C189B5A008D5316 /* sleepTalk */;
@@ -299,6 +418,62 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		61458CC72C495DCC00B7107E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4YZQY4C47E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sleepTalkActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = sleepTalkActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entaku.sleepTalk.sleepTalkActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61458CC82C495DCC00B7107E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4YZQY4C47E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sleepTalkActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = sleepTalkActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entaku.sleepTalk.sleepTalkActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		617F53972C189B5B008D5316 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -421,6 +596,7 @@
 		617F539A2C189B5B008D5316 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -429,7 +605,9 @@
 				DEVELOPMENT_TEAM = 4YZQY4C47E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sleepTalk/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone to record audio for transcription purposes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -456,6 +634,7 @@
 		617F539B2C189B5B008D5316 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,7 +643,9 @@
 				DEVELOPMENT_TEAM = 4YZQY4C47E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sleepTalk/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone to record audio for transcription purposes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -567,6 +748,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		61458CC62C495DCC00B7107E /* Build configuration list for PBXNativeTarget "sleepTalkActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61458CC72C495DCC00B7107E /* Debug */,
+				61458CC82C495DCC00B7107E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		617F53702C189B5A008D5316 /* Build configuration list for PBXProject "sleepTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

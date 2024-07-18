@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
+import ActivityKit
 
-import SwiftUI
 
 
 struct ContentView: View {
@@ -24,6 +24,18 @@ struct ContentView: View {
             }) {
                 Text(audioRecorder.isRecording ? "録音停止" : "録音開始")
             }
+        }
+    }
+    func startLiveActivity() {
+        let attributes = sleepTalkActivityAttributes(name: "Sleep Talk")
+        let initialContentState = sleepTalkActivityAttributes.ContentState(emoji: "😴")
+        let activityContent = ActivityContent(state: initialContentState, staleDate: Date().addingTimeInterval(60))
+
+        do {
+            let activity = try Activity<sleepTalkActivityAttributes>.request(attributes: attributes, content: activityContent, pushType: nil)
+            print("Activity started: \(activity.id)")
+        } catch {
+            print("Failed to start activity: \(error.localizedDescription)")
         }
     }
 }
