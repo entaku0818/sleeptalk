@@ -8,34 +8,31 @@
 import SwiftUI
 import ActivityKit
 
-
-
 struct ContentView: View {
-    @StateObject private var audioRecorder = AudioRecorder()
 
+    init() {
+        UITabBar.appearance().backgroundColor = .gray
+    }
     var body: some View {
-        VStack {
-            Button(action: {
-                if audioRecorder.isRecording {
-                    audioRecorder.stopRecording()
-                } else {
-                    audioRecorder.startRecording()
-                }
-            }) {
-                Text(audioRecorder.isRecording ? "録音停止" : "録音開始")
+        ZStack {
+
+            TabView {
+                SleepView()
+                    .tabItem {
+                        Image(systemName: "1.circle")
+                        Text("First")
+                    }.background(Color.red)
+
+                Text("Second Tab")
+                    .tabItem {
+                        Image(systemName: "2.circle")
+                        Text("Second")
+                    }
             }
         }
     }
-    func startLiveActivity() {
-        let attributes = sleepTalkActivityAttributes(name: "Sleep Talk")
-        let initialContentState = sleepTalkActivityAttributes.ContentState(emoji: "😴")
-        let activityContent = ActivityContent(state: initialContentState, staleDate: Date().addingTimeInterval(60))
+}
 
-        do {
-            let activity = try Activity<sleepTalkActivityAttributes>.request(attributes: attributes, content: activityContent, pushType: nil)
-            print("Activity started: \(activity.id)")
-        } catch {
-            print("Failed to start activity: \(error.localizedDescription)")
-        }
-    }
+#Preview {
+    ContentView()
 }

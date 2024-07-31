@@ -2,10 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIBackgroundModes</key>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
-		<string>fetch</string>
-		<string>remote-notification</string>
+		<string>com.entaku.VoiLog.background</string>
 	</array>
 	<key>NSWidgetKit</key>
 	<dict>
@@ -14,7 +13,9 @@
 			<string>$(PRODUCT_BUNDLE_IDENTIFIER).TimerActivity</string>
 		</array>
 	</dict>
-	<key>NSSupportsLiveActivities</key>
-	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
 </dict>
 </plist>

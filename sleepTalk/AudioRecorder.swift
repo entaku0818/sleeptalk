@@ -7,7 +7,6 @@
 
 import Foundation
 import AVFoundation
-import UIKit
 
 class AudioRecorder: NSObject, ObservableObject {
     @Published var isRecording = false
@@ -51,7 +50,6 @@ class AudioRecorder: NSObject, ObservableObject {
             // バックグラウンド録音を有効にする
             try audioSession.setActive(true)
             try audioSession.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker, .mixWithOthers])
-            UIApplication.shared.beginBackgroundTask(expirationHandler: nil)
         } catch {
             print("録音の開始に失敗しました: \(error.localizedDescription)")
         }

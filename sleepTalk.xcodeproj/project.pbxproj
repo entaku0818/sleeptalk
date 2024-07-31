@@ -23,6 +23,7 @@
 		617F53942C189B5B008D5316 /* sleepTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F53932C189B5B008D5316 /* sleepTalkUITests.swift */; };
 		617F53962C189B5B008D5316 /* sleepTalkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F53952C189B5B008D5316 /* sleepTalkUITestsLaunchTests.swift */; };
 		6197F1D82C31A09A00CDF7F0 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6197F1D72C31A09A00CDF7F0 /* AudioRecorder.swift */; };
+		61E8F8C82C5A7531002695D6 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E8F8C72C5A7531002695D6 /* SleepView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		617F53932C189B5B008D5316 /* sleepTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sleepTalkUITests.swift; sourceTree = "<group>"; };
 		617F53952C189B5B008D5316 /* sleepTalkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sleepTalkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6197F1D72C31A09A00CDF7F0 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		61E8F8C72C5A7531002695D6 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				617F537C2C189B5B008D5316 /* Assets.xcassets */,
 				617F537E2C189B5B008D5316 /* Preview Content */,
 				6197F1D72C31A09A00CDF7F0 /* AudioRecorder.swift */,
+				61E8F8C72C5A7531002695D6 /* SleepView.swift */,
 			);
 			path = sleepTalk;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E8F8C82C5A7531002695D6 /* SleepView.swift in Sources */,
 				6197F1D82C31A09A00CDF7F0 /* AudioRecorder.swift in Sources */,
 				61458CCA2C495F2000B7107E /* sleepTalkActivityLiveActivity.swift in Sources */,
 				617F537B2C189B5A008D5316 /* ContentView.swift in Sources */,
@@ -608,6 +612,7 @@
 				INFOPLIST_FILE = sleepTalk/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone to record audio for transcription purposes.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -646,6 +651,7 @@
 				INFOPLIST_FILE = sleepTalk/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone to record audio for transcription purposes.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
